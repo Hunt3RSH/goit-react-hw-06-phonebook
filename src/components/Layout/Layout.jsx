@@ -10,7 +10,7 @@ export const Layout = () => {
     <>
       <Navbar expand="lg">
         <StyledContainer>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="./goit-react-hw-06-phonebook">
             <img src={LogoBook} alt="Logo" width={120} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
