@@ -20,13 +20,15 @@ const ContactForm = () => {
 
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
-
   const handleFormSubmit = e => {
     e.preventDefault();
 
-    contacts.some(contact => contact.name === name)
-      ? toast.warn(`${name} is already in contacts 💖`)
-      : toast.success(`Сontact @${name} has been successfully added`);
+    const contactName = contacts.map(el => el.name.toLowerCase());
+    if (contactName.includes(name.toLowerCase())) {
+      toast.warn(`@${name} is already in contacts`);
+      return;
+    }
+    toast.success(`Сontact @${name} has been successfully added 💖`);
     dispatch(
       addContacts({
         id: nanoid(),

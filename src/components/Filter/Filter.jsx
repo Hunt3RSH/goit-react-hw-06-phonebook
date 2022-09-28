@@ -5,7 +5,7 @@ import { getFilter } from 'redux/contacts/selectors';
 import { setFilter } from 'redux/contacts/slice';
 import { FilterLabel } from './Filter.styled';
 
-export default function Filter() {
+const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(getFilter);
 
@@ -24,4 +24,6 @@ export default function Filter() {
       </FilterLabel>
     </StyledContainer>
   );
-}
+};
+
+export default Filter;

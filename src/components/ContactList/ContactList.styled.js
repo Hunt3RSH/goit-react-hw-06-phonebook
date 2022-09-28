@@ -8,6 +8,12 @@ export const Title = styled.h2`
   padding: 40px 0;
 `;
 
+export const ListContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
 export const ContactsListBody = styled.tbody``;
 
 export const ContactsItem = styled.tr`
@@ -19,11 +25,11 @@ export const ContactsItem = styled.tr`
   }
 `;
 
-export const TableStyle = styled.table`
-  width: 100%;
-`;
 export const TableName = styled.span`
   display: flex;
   width: 100%;
+  height: 100%;
+  align-items: center;
   justify-content: center;
+  line-height: 40px;
 `;

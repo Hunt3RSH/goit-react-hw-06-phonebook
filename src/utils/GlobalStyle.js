@@ -24,4 +24,16 @@ h4 {
 p {
   margin: 0;
 }
+.gap {
+  &-15 {
+    gap: 15px;
+  }
+}
+.loaderStyle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 1101;
+}
 `;

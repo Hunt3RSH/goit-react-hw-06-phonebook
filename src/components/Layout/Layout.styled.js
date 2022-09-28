@@ -11,28 +11,10 @@ export const NavListLink = styled(NavLink)`
     color: red;
   }
   &.active {
-    color: green;
+    color: #0d6efd;
     &:hover,
     &:focus {
       color: red;
     }
-  }
-`;
-
-export const FooterStyle = styled.footer`
-  padding-top: 0.5rem;
-`;
-
-export const CopyWrapper = styled.span`
-  font-size: 15px;
-  font-weight: 400;
-`;
-
-export const Copy = styled.a`
-  text-decoration: none;
-  margin-left: 5px;
-  &:hover,
-  &:focus {
-    color: red;
   }
 `;
